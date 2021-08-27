@@ -5,25 +5,21 @@ import collections.SetExample;
 
 public class Example {
     public static void main(String[] args) {
-        ListExample listExample = new ListExample();
-        listExample.arrayList();
-        listExample.linkedList();
-        listExample.stack();
-        listExample.vector();
 
-        SetExample setExample = new SetExample();
-        setExample.hashSetExample();
-        setExample.linkedHashSetExample();
-        setExample.treeSetExample();
+        ListExample.arrayList();
+        ListExample.linkedList();
+        ListExample.stack();
+        ListExample.vector();
 
-        QueueExample queueExample = new QueueExample();
-        queueExample.priorityQueue();
+        SetExample.hashSetExample();
+        SetExample.linkedHashSetExample();
+        SetExample.treeSetExample();
 
-        MapExample mapExample = new MapExample();
-        mapExample.hashMap();
-        mapExample.linkedHashMap();
-        mapExample.treeMap();
+        QueueExample.priorityQueue();
 
+        MapExample.hashMap();
+        MapExample.linkedHashMap();
+        MapExample.treeMap();
 
     }
 }

@@ -9,12 +9,12 @@ import java.util.TreeMap;
 
 public class MapExample {
 
-    private final Person person1 = new Person("Sponge", "Bob", 1);
-    private final Person person2 = new Person("Bob", "Marley", 2);
-    private final Person person3 = new Person("Patrick", "Star", 3);
-    private final Person person4 = new Person("Patrick", "Abba", 4);
+    private static final Person person1 = new Person("Sponge", "Bob", 1);
+    private static final Person person2 = new Person("Bob", "Marley", 2);
+    private static final Person person3 = new Person("Patrick", "Star", 3);
+    private static final Person person4 = new Person("Patrick", "Abba", 4);
 
-    public void hashMap() {
+    public static void hashMap() {
         Map<Integer, Person> hashmap = new HashMap<>();
         hashmap.put(4, person1);
         hashmap.put(2, person2);
@@ -29,7 +29,7 @@ public class MapExample {
         }
     }
 
-    public void linkedHashMap(){
+    public static void linkedHashMap(){
         Map<Integer, Person> hashmap = new LinkedHashMap<>();
         hashmap.put(4, person1);
         hashmap.put(2, person2);
@@ -44,7 +44,7 @@ public class MapExample {
         }
     }
 
-    public void treeMap(){
+    public static void treeMap(){
         TreeMap<Integer, Person> hashmap = new TreeMap<>();
         hashmap.put(4, person1);
         hashmap.put(2, person2);

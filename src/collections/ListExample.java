@@ -7,12 +7,12 @@ import java.util.*;
 
 public class ListExample {
 
-    private final Person person1 = new Person("Sponge", "Bob", 1);
-    private final Person person2 = new Person("Bob", "Marley", 2);
-    private final Person person3 = new Person("Patrick", "Star", 3);
-    private final Person person4 = new Person("Patrick", "Abba", 4);
+    private static final Person person1 = new Person("Sponge", "Bob", 1);
+    private static final Person person2 = new Person("Bob", "Marley", 2);
+    private static final Person person3 = new Person("Patrick", "Star", 3);
+    private static final Person person4 = new Person("Patrick", "Abba", 4);
 
-    public void arrayList() {
+    public static void arrayList() {
         List<Person> list = new ArrayList<>(4);
         list.add(person1);
         list.add(person2);
@@ -35,7 +35,7 @@ public class ListExample {
         }
     }
 
-    public void linkedList() {
+    public static void linkedList() {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(3);
         linkedList.addLast(2);
@@ -53,7 +53,7 @@ public class ListExample {
         System.out.println(personLinkedList);
     }
 
-    public void vector() {
+    public static void vector() {
         List<Person> vector = new Vector<>();
         vector.add(person1);
         vector.add(person2);
@@ -64,7 +64,7 @@ public class ListExample {
         }
     }
 
-    public void stack() {
+    public static void stack() {
         Stack<Person> stack = new Stack<>();
         stack.push(person1); //add
         stack.push(person2);
